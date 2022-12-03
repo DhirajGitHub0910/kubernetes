@@ -1,0 +1,12 @@
+# file for service
+apiVersion: v1
+kind: Pod
+metadata:
+ name: nginx-pod
+ labels:
+  author: dhiraj
+  type: reverse-proxy
+spec:
+ containers:
+  - name: appserver
+    image: nginx

@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: postgres
+  labels:
+    author: dhiraj
+    type: database
+spec:
+  containers:
+    - name: mydb
+      image: postgres
+      env:
+        - name: POSTGRES_PASSWORD
+          value: dhiraj
+        - name: POSTGRES_USER
+          value: dhiraj
+        - name: POSTGRES_DB
+          value: dhiraj
